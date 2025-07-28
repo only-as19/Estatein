@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p,span{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+form h2{
+    margin-top: 0;
+}
+
+form{
+    width: 38%;
+    background-color: bisque;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+}
+
+input{
+    color: gray;
+}
+
+select{
+    color: #808080;
+}
+
+input,select{
+    padding: 0.9em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #2d2d2d;
+    background-color: inherit;
+}
+.personal-input {
+      width: 100%;
+      display: flex;
+      gap: 10px; /* space between input and select */
+    }
+
+    .personal-input input,
+    .personal-input select {
+      width: 48%;
+      box-sizing: border-box;
+    }
+
+
+
+input:focus {
+    outline: 2px solid gray;
+}
+
+.agree{
+    text-align: center;
+}
+
+form button{
+    width: 100%;
+    padding: 1.2em;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #703BF7;
+    border-radius: 8px;
+}
+
+.log:hover{
+    color: azure;
+}
+.log:focus{
+    color: azure;
+}
+
+
+.div{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.div input{
+    width: 100%;
+}
+
+.eye-icon img{
+    height: 20px;
+}
+
+.eye-icon{
+    position: absolute;
+    right: 8px;
+    top: 9px;
+}
+
+
+.form-container{
+    text-align: center;
+    display: flex;
+    padding: 2.5em 1.25em;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.personal-input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.loc-pass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agree{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0;
+    background-image: repeating-radial-gradient(ellipse farthest-corner at left top, rgba(112,59,247,1) 0%, rgba(7,7,7,1) 19%, rgba(2,2,2,1) 40%, rgba(5,5,5,1) 60%, rgba(7,7,7,1) 80%, rgba(112,59,247,1) 100%);
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-color: rgba(0,0,0,0);
+}
+
+
+@media (max-width:750px) {
+    form p{
+        font-size: .8rem;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .personal-input{
+        flex-direction: column;
+    }
+    
+    .personal-input input{
+        width: 100%;
+    }
+    
+    .personal-input select{
+        width: 100%;
+    }
+}

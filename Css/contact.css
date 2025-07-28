@@ -1,0 +1,278 @@
+.contact-form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  border: 2px solid #2d2d2d;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  padding: 60px;
+  width: 70%;
+}
+
+.input-wrap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #2d2d2d;
+  background: inherit;
+  outline: none;
+  color: gray;
+  column-gap: 10px;
+}
+
+textarea {
+  color: white;
+  border: 2px solid #2d2d2d;
+  padding: 20px;
+  resize: none;
+  height: 120px;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+}
+
+.span-2 {
+  grid-column: span 2; /* This makes the textarea span across both columns */
+}
+
+
+
+/* Media query for screens smaller than or equal to 750px */
+@media (max-width: 750px) {
+  .form-container {
+    width: 90%; /* Make the form container width more flexible */
+    padding: 20px; /* Reduce padding on smaller screens */
+    grid-template-columns: 1fr; /* Stack the form fields vertically */
+  }
+
+  .input-wrap {
+    margin-top: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .contact-form input,
+  textarea {
+    padding: 12px; /* Adjust input and textarea padding */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .span-2 {
+    grid-column: span 1; /* Ensure textarea stays within one column when stacking */
+  }
+}
+
+
+/* Location */
+
+.office-locations {
+      padding: 60px 20px;
+    }
+
+    .office-container {
+      margin: auto;
+    }
+
+    .office-locations p {
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 auto 40px auto;
+    }
+
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-buttons button {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .filter-buttons .active,
+    .filter-buttons button:hover {
+      border-color: #5f5f5f;
+      background-color: #2a2a2a;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .card {
+      background: #121212;
+      border: 1px solid #222;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .card h4 {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info span {
+      background: #1e1e1e;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .direction-btn {
+      background-color: #7f49fc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .direction-btn:hover {
+      background-color: #6e39ea;
+    }
+
+    /* Responsive */
+    
+@media (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+
+    /* Explore section */
+
+    .grid-container{
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    .grid-container img{
+      max-height: 200px;
+    }
+
+    .nested-right{
+      display: flex;
+      gap: 20px;
+    }.grid-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid-container img {
+  width: 100%; /* Ensure images are responsive and fill their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 8px;
+}
+
+.nested-right {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.box {
+  width: 100%;
+}
+
+.box6 {
+  grid-column: span 2; /* Make the text box span both columns */
+  text-align: center;
+}
+
+.box6 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.box6 p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+  }
+
+
+  .box6 {
+    grid-column: span 1; /* Ensure the text box spans one column */
+    padding: 20px;
+  }
+
+  .box6 h2 {
+    font-size: 20px;
+  }
+
+  .box6 p {
+    font-size: 14px;
+  }
+
+  .grid-container img {
+    width: 100%; /* Ensure images fit within the container on small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
