@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real State Business</title>
-    <link rel="stylesheet" href="Css/style.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./Css/style.css"> <!-- Link to external CSS file -->
     <link rel="icon" href="./Img/favi.png" type="image/x-icon"> <!-- Favicon for the page -->
 </head>
 <body>
